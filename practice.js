@@ -46,7 +46,7 @@ function greeting (name) {
 //Name it newGreeting.
 
 const newGreeting = function (name) {
-  return "Hello" + name
+  return "Hello, " + name
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -54,7 +54,9 @@ const newGreeting = function (name) {
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-//Code Here
+const finalGreeting = (name) => { 
+  return "Hello, " + name 
+}
 
 //////////////////PROBLEM 9////////////////////
 
@@ -69,7 +71,7 @@ const groceries = ["apples", "milk", "eggs", "bread"]
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-const dog = {
+let dog = {
   name: "Rex",
   color: "brown",
   age: 2,
@@ -97,8 +99,6 @@ function nameCheck (name) {
     return "Cool name, " + name
   }
 }
-
-console.log (nameCheck("John"))
 
 //////////////////PROBLEM 12////////////////////
 
@@ -135,9 +135,12 @@ function faveColorFinder (color) {
     return "so trendy"
   }
   else {
-    return "you need to evaluate your favorie color choice"
+    return "you need to evaluate your favorite color choice"
   }
 }
+
+// console.log (faveColorFinder("blue"))
+
 //////////////////PROBLEM 14////////////////////
 
 let duck = "cute";
@@ -160,28 +163,28 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 15////////////////////
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+let age = 26
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+age = 27
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+age = 999
